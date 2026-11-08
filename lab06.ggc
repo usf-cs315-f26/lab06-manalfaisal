@@ -1,0 +1,14 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-11-08T21:20:23.715Z",
+  "name": "lab06",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [],
+  "wires": [],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
