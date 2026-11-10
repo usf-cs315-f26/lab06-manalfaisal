@@ -1,6 +1,6 @@
 {
   "version": "1.6",
-  "timestamp": "2026-11-10T05:02:55.397Z",
+  "timestamp": "2026-11-10T05:06:21.004Z",
   "name": "lab06",
   "interface": {
     "inputs": [],
@@ -8,26 +8,6 @@
   },
   "nextCircuitId": 2,
   "components": [
-    {
-      "id": "input_1_1794210361417",
-      "type": "input",
-      "x": 5,
-      "y": 6,
-      "props": {
-        "base": 10,
-        "bits": 1,
-        "rotation": 0,
-        "label": "CLK"
-      },
-      "ports": [
-        {
-          "name": "0",
-          "x": 1,
-          "y": 0,
-          "direction": "output"
-        }
-      ]
-    },
     {
       "id": "input_2_1794210362234",
       "type": "input",
@@ -1702,45 +1682,28 @@
           "direction": "input"
         }
       ]
+    },
+    {
+      "id": "clock_1_1794287131336",
+      "type": "clock",
+      "x": 5,
+      "y": 6,
+      "props": {
+        "frequency": 1,
+        "rotation": 0,
+        "mode": "manual"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
     }
   ],
   "wires": [
-    {
-      "id": "wire_1794210581600",
-      "points": [
-        {
-          "x": 6,
-          "y": 6
-        },
-        {
-          "x": 13,
-          "y": 6
-        },
-        {
-          "x": 13,
-          "y": 16
-        },
-        {
-          "x": 16,
-          "y": 16
-        }
-      ],
-      "startConnection": {
-        "pos": {
-          "x": 6,
-          "y": 6
-        },
-        "portType": "output"
-      },
-      "endConnection": {
-        "pos": {
-          "x": 16,
-          "y": 16
-        },
-        "portType": "input"
-      },
-      "bits": 1
-    },
     {
       "id": "wire_1794210589750",
       "points": [
@@ -2380,38 +2343,6 @@
         "pos": {
           "x": 15,
           "y": 2
-        },
-        "portType": "input"
-      },
-      "bits": 1
-    },
-    {
-      "id": "wire_1794283061356",
-      "points": [
-        {
-          "x": 9,
-          "y": 6
-        },
-        {
-          "x": 9,
-          "y": 3
-        },
-        {
-          "x": 11,
-          "y": 3
-        }
-      ],
-      "startConnection": {
-        "pos": {
-          "x": 6,
-          "y": 6
-        },
-        "portType": "output"
-      },
-      "endConnection": {
-        "pos": {
-          "x": 11,
-          "y": 3
         },
         "portType": "input"
       },
@@ -3560,6 +3491,72 @@
         "portType": "input"
       },
       "bits": 64
+    },
+    {
+      "id": "wire_1794287172074",
+      "points": [
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 13,
+          "y": 6
+        },
+        {
+          "x": 13,
+          "y": 16
+        },
+        {
+          "x": 16,
+          "y": 16
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 6,
+          "y": 6
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 16,
+          "y": 16
+        },
+        "portType": "input"
+      }
+    },
+    {
+      "id": "wire_1794287178674",
+      "points": [
+        {
+          "x": 9,
+          "y": 6
+        },
+        {
+          "x": 9,
+          "y": 3
+        },
+        {
+          "x": 11,
+          "y": 3
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 6,
+          "y": 6
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 11,
+          "y": 3
+        },
+        "portType": "input"
+      }
     }
   ],
   "wireJunctions": [
@@ -3576,8 +3573,8 @@
         "x": 9,
         "y": 6
       },
-      "sourceWireIndex": 0,
-      "connectedWireId": "wire_1794283061356"
+      "sourceWireIndex": 61,
+      "connectedWireId": "wire_1794287178674"
     }
   ],
   "schematicComponents": {}
